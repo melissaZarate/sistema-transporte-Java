@@ -14,7 +14,7 @@ public abstract class Transporte {
     }
 //metodos abstractos
     public abstract String moverse();
-    public abstract int capacidad();
+    public abstract String capacidad();
     public abstract boolean tieneCombustible();
     
   

@@ -1,13 +1,28 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
+
 package sistematransporte;
 
-/**
- *
- * @author HP
- */
-public class Bus {
-    
+
+public class Bus extends Transporte {
+
+    public Bus(String nombre) {
+        super(nombre);
+    }
+    //clases abstractas
+    @Override
+    public String moverse(){
+        String seMueve="se mueve con motor";
+        return seMueve;
+    }
+    @Override
+    public String capacidad(){
+        
+        return "Tiene capacidad para 24 personas";
+    }
+    @Override
+    public boolean tieneCombustible(){
+        return true;
+    }
+    public String tipoCombustible(){
+        return "Diesel";
+    }
 }
