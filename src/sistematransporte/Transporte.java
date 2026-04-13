@@ -12,6 +12,13 @@ public abstract class Transporte {
     public String getNombre() {
         return nombre;
     }
-       
+//metodos abstractos
+    public abstract String moverse();
+    public abstract int capacidad();
+    public abstract boolean tieneCombustible();
+    
+  
+ 
+    
     
 }
