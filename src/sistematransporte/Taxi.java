@@ -25,7 +25,8 @@ public class Taxi extends Transporte{
     public boolean tieneCombustible(){
         return true;
     }
-    public String tipoCombustible(){
+    @Override
+    public String TipoCombustible(){
         return "Gasolina";
     }
     

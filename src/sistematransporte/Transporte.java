@@ -16,6 +16,9 @@ public abstract class Transporte {
     public abstract String moverse();
     public abstract String capacidad();
     public abstract boolean tieneCombustible();
+    public String TipoCombustible(){
+        return "tiene combustible";
+    }
     
   
  
