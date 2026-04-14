@@ -23,10 +23,20 @@ public abstract class Transporte {
         System.out.println("combustible: "+TipoCombustible());
         System.out.println("cpacidad: "+capacidad());
         System.out.println("costo de viaje para "+distancia+ " km es:"+costoViaje(distancia));
-        System.out.println("____________________________________________________________________");
+       
         
     }
-    
+    //saber si es economico
+    public boolean esEconomico(double distancia){
+        return costoViaje(distancia)<20;
+        
+    }
+    //capacidad disponible
+  /*  public int capacidaDisponible(){
+        int resto=0;
+        
+        return;
+    }*/
   
  
     
