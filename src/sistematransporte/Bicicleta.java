@@ -22,8 +22,11 @@ public class Bicicleta extends Transporte{
         return "Tiene capacidad para 2 personas";
     }
     @Override
-    public boolean tieneCombustible(){
-        return false;
+    public String TipoCombustible(){
+        return "no tiene combustible";
+    }
+    public double costoViaje(double distancia){
+        return 0;
     }
    
 }

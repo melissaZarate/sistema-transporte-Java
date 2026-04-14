@@ -18,12 +18,16 @@ public class Bus extends Transporte {
         
         return "Tiene capacidad para 24 personas";
     }
-    @Override
-    public boolean tieneCombustible(){
-        return true;
-    }
+  
     @Override
     public String TipoCombustible(){
         return "Diesel";
+    }
+  
+    @Override
+    public double costoViaje(double distancia){
+        
+        return distancia*2;
+        
     }
 }

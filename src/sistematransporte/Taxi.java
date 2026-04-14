@@ -21,13 +21,13 @@ public class Taxi extends Transporte{
         
         return "Tiene capacidad para 4 personas";
     }
-    @Override
-    public boolean tieneCombustible(){
-        return true;
-    }
+  
     @Override
     public String TipoCombustible(){
         return "Gasolina";
     }
-    
+    @Override
+    public double costoViaje(double distancia){
+        return distancia*5;
+    }
 }
